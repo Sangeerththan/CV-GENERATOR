@@ -1,0 +1,18 @@
+.header-container {
+    display: flex;
+
+    profile-info-container{
+        width: 80%;
+        font-size: larger;
+    }
+    
+    profile-picture-container{
+        width: 20%;
+    }
+    
+    .profile-picture{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+}
