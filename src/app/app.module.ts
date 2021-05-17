@@ -14,6 +14,10 @@ import { EducationComponent } from './resume/content/education/education.compone
 import { AchievementsComponent } from './resume/content/achievements/achievements.component';
 import { LanguagesComponent } from './resume/content/languages/languages.component';
 import { SkillsComponent } from './resume/content/skills/skills.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactDetailsComponent } from './resume/header/contact-details/contact-details.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,14 @@ import { SkillsComponent } from './resume/content/skills/skills.component';
     EducationComponent,
     AchievementsComponent,
     LanguagesComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
