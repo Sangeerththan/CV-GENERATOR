@@ -2,3 +2,16 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Nunito"; }
+
+.content-heading{
+    color: #802f36;
+    text-decoration: underline;
+}
+
+.content-body{
+    color: #000;
+    text-decoration: none;
+}

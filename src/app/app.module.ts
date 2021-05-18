@@ -15,9 +15,12 @@ import { AchievementsComponent } from './resume/content/achievements/achievement
 import { LanguagesComponent } from './resume/content/languages/languages.component';
 import { SkillsComponent } from './resume/content/skills/skills.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactDetailsComponent } from './resume/header/contact-details/contact-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/modules/material/material.module';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,11 @@ import { ContactDetailsComponent } from './resume/header/contact-details/contact
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule,
+    AngularSvgIconModule.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
