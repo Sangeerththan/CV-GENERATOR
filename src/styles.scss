@@ -9,9 +9,16 @@ body { margin: 0; font-family: "Nunito"; }
 .content-heading{
     color: #802f36;
     text-decoration: underline;
+    font-size: xx-large;
 }
 
 .content-body{
     color: #000;
     text-decoration: none;
+}
+
+.center-align {
+    display: flex;
+    justify-content:center;
+    text-align: center;
 }
