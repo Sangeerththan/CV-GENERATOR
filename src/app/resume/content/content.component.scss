@@ -12,3 +12,14 @@
     display: flex;
     justify-content: center;
 }
+
+.content-seperator {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px dashed #000
+}
+
+.content-subsection {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
