@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactDetailsComponent } from './resume/header/contact-details/contact-details.component';
+import { LoginComponent } from './core/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactDetailsComponent } from './resume/header/contact-details/contact
     AchievementsComponent,
     LanguagesComponent,
     SkillsComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

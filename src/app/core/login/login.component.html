@@ -1,0 +1,59 @@
+<div class="hole">
+    
+    <div class="col-6 p-2 mx-auto divWrapper shadow ">
+       
+          <!-- <div *ngIf="showMessage1" class="alert alert-danger text-center alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Invalid username or password</strong> 
+          </div> -->
+        <div class="logo m-2">
+            <div class="col-md-12 text-center text2">
+                <h1>Login</h1>
+            </div>
+        </div>
+        <!-- <form [formGroup]="loginForm" (submit)="onSubmit()" method="post" name="login" class="m-4"> -->
+
+            <div class="input-group groupMargin">
+                <div class="input-group-prepend ">
+                    <span class="input-group-text " id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                </div>
+               
+                <input type="text" class="form-control myTxt "  placeholder="Username"
+                    aria-label="Username" aria-describedby="basic-addon1"
+                   >
+                
+                
+            </div>
+            <div class="input-group groupMargin">
+                <div class="input-group-prepend ">
+                    <span class="input-group-text " id="basic-addon1"><i class="fas fa-unlock-alt"></i></span>
+                </div>
+                <input type="password" class="form-control myTxt"  placeholder="Password"
+                    aria-label="Username" aria-describedby="basic-addon1"
+                   >
+               
+            </div>
+            <span class="text-center">
+                <p class="m-0">Not Registered? <a routerLink="/register">Register</a></p>
+                <p class="m-0"><a routerLink="/resetpassword">Forget Password</a></p>
+            </span>
+            <div class="row p-2">
+
+                <div class="col-md-12 text-center p-0">
+                    <button type="submit" class=" btn btn-block mybtn  tx-tfm  mr-3">Login</button>
+                </div>
+            </div>
+        
+
+        <div class=" m-0 text-center p-2 wrap">
+            <p class="text-white m-0">Follow us on</p>
+            <button class="social-media-btn "><i class="fab fa-facebook"></i></button>
+            <button class="social-media-btn "><i class="fab fa-linkedin"></i></button>
+            <button class="social-media-btn "><i class="fab fa-twitter"></i></button>
+
+        </div>
+    </div>
+</div>
+
+
+
