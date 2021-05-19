@@ -15,10 +15,15 @@ import { AchievementsComponent } from './resume/content/achievements/achievement
 import { LanguagesComponent } from './resume/content/languages/languages.component';
 import { SkillsComponent } from './resume/content/skills/skills.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactDetailsComponent } from './resume/header/contact-details/contact-details.component';
 import { LoginComponent } from './core/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/modules/material/material.module';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactInfoComponent } from './user/contact-info/contact-info.component';
+import { ResumeInfoComponent } from './user/resume-info/resume-info.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +40,19 @@ import { LoginComponent } from './core/login/login.component';
     LanguagesComponent,
     SkillsComponent,
     ContactDetailsComponent,
-    LoginComponent
+    LoginComponent,
+    ContactInfoComponent,
+    ResumeInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule,
+    AngularSvgIconModule.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,33 @@
 .profile-info {
     display: flex;
+    background-color: antiquewhite;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    justify-content: center;
 }
 
+.header-title{
+    font-size: xxx-large;
+    color: #000;
+    padding: 0.5rem;
+}
+
+.header-job-title{
+    font-size: large;
+    color: #802f36;
+    padding: 0.5rem;
+}
 .profile-info-container{
     font-size: larger;
+    width: 80%;
+}
+
+.profile-picture-container{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-picture{
