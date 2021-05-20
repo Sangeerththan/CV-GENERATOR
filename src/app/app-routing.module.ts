@@ -5,8 +5,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
+  { path:"", component:ResumeComponent, pathMatch:'full'},
   { path:'login', component:LoginComponent},
-  { path:'resume', component:ResumeComponent}
+  // { path:'resume', component:ResumeComponent}
 ];
 
 @NgModule({
