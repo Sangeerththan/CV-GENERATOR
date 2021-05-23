@@ -6,6 +6,7 @@ import { ContactInfoComponent } from './user/contact-info/contact-info.component
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
+  { path:"", component:ResumeComponent, pathMatch:'full'},
   { path:'login', component:LoginComponent},
   { path:'resume', component:ResumeComponent},
   { path:'useredit', component:ContactInfoComponent}
