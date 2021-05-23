@@ -10,17 +10,20 @@ import {User} from '../../../user';
 })
 export class ProjectsComponent implements OnInit {
 
-  users: User = new User();
+  // users: User = new User();
+   users:any[]=[]
 
   constructor(private resumeService: ResumeService) { }
 
   ngOnInit(): void {
-    this.users = this.getUsers();
+    // this.users = this.getUsers();
+    this.getUsers();
   }
 
   getUsers(){
     return this.resumeService.getUsers().subscribe(data =>{  
-      this.users =data.user;   
+      this.users =data;   
+      console.log("users",this.users);
       })  
   }
 }

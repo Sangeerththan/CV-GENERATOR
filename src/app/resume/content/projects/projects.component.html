@@ -1,2 +1,6 @@
 <div class="content-heading">Projects</div>
-<div *ngFor="users">email</div>
+<div *ngFor="let dom of users">
+    <p>{{dom.username}}</p>
+    <p>{{dom.email}}</p>
+    <p>{{dom.password}}</p>
+</div>
