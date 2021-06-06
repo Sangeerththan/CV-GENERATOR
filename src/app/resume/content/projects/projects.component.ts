@@ -1,3 +1,4 @@
+import { Identifiers } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { from, Observable } from 'rxjs';
 import { ResumeService } from '../../../core/services/resume.service';  
@@ -10,17 +11,17 @@ import {User} from '../../../user';
 })
 export class ProjectsComponent implements OnInit {
 
-  users: User = new User();
+  user: User = new User();
 
   constructor(private resumeService: ResumeService) { }
 
   ngOnInit(): void {
-    this.users = this.getUsers();
+    this.getUsers(1);
   }
 
-  getUsers(){
-    return this.resumeService.getUsers().subscribe(data =>{  
-      this.users =data.user;   
+  getUsers(id: number){
+    return this.resumeService.getUsers(id).subscribe(data =>{  
+      this.user = data;   
       })  
   }
 }

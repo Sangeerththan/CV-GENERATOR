@@ -11,7 +11,7 @@ export class ResumeService {
 
   constructor(private http:HttpClient) { }
 
-  getUsers(): Observable<any> {  
-    return this.http.get(`${this.baseUrl}`+'user');  
+  getUsers(id: number): Observable<any> {  
+    return this.http.get(`${this.baseUrl}`+`user/`+id);  
   }  
 }
