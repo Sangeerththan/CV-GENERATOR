@@ -1,12 +1,179 @@
-<!-- Default form contact -->
-<form class="text-center border border-light p-5">
-  
-    <!-- Name -->
-    <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
-      class="form-control mb-4" placeholder="Name">
-  
-    <!-- Email -->
-    <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
-      class="form-control mb-4" placeholder="E-mail">
-  </form>
-  <!-- Default form contact -->
+<div class="card border-dark mb-3" style="max-width: 64rem; margin-top: 22px;">
+  <div class="card-header p-3 mb-2  text-white border-0 hdc">
+      <div class="row align-items-center">
+          <div class="col-8">
+              <h3 class="mb-0">MY ACCOUNT</h3>
+          </div>
+
+      </div>
+
+
+
+
+
+      
+  </div>
+
+  <div class="profileimg">
+ 
+      <h6 class="heading-small  mb-4">Profile Picture</h6>
+      <div class="form-group ">
+          <label class="form-control-label pic11" for="input-street">Upload Profile</label>
+         <div class="row">
+          <div class="user-pic">
+              <!-- <img [src]="getImage(imagea)"> -->
+              <!-- <img class="img-responsive img-rounded igg1" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="User picture" (click)="gotoprofile()"> -->
+              <img class="img-responsive img-rounded igg1" >
+            </div>
+         <div class="gp1">
+          <!-- <div class="custom-file"> -->
+              <!-- <input type="file" (change)="onFileChanged($event)"> -->
+              <input type="file">
+              <!-- <input type="file"  accept="image/*" #file class="custom-file-input" id="customInput" (click)="onUpload()" value="upload" required> -->
+              <button class="btn btn-basic btn-block btn-x3"  value="upload" >Upload file</button>
+              <!-- (click)="file.click()" -->
+          <!-- </div> -->
+         </div>
+         </div>
+
+         
+      </div>
+
+    </div>
+    <hr class="my-4">
+
+  <div class="card-body">
+      <form>
+          <h6 class="heading-small  mb-4">User information</h6>
+          <div class="pl-lg-4">
+            
+              <div class="row">
+                  <div class="col-lg-6">
+                      <div class="form-group">
+                          <label class="form-control-label" for="input-first-name">First
+                              name</label>
+                          <input type="text" id="input-first-name" class="form-control form-control-alternative"
+                              placeholder="First name" value="Lucky"  >
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="form-group ">
+                          <label class="form-control-label" for="input-last-name">Last
+                              name</label>
+                          <input type="text" id="input-last-name" class="form-control form-control-alternative"
+                              placeholder="Last name" value="Jesse"  >
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-6">
+                      <div class="form-group ">
+                          <label class="form-control-label" for="input-contact-number">Contact Number
+                          </label>
+                          <input type="number" id="input-contact-number"
+                              class="form-control form-control-alternative" 
+                              value="0778679549" >
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="form-group ">
+                          <label class="form-control-label" for="input-immediate-number">Immediate Contact Number
+                          </label>
+                          <input type="number" id="input-immediate-number"
+                              class="form-control form-control-alternative" 
+                              value="0778679549"  >
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-4">
+          <!-- Address -->
+          <h6 class="heading-small  mb-4">Contact information</h6>
+          <div class="pl-lg-4">
+            
+              <div class="row">
+                  <div class="col-lg-3">
+                      <div class="form-group ">
+                          <label class="form-control-label" for="input-city">Country</label>
+                          <select type="text" id="input-country" class="form-control form-control-alternative"
+                              placeholder="City" value="New York"  >
+                              <option>Sri lanka</option>
+                              <option>India</option>
+                              <option>USA</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label class="form-control-label" for="input-country">State</label>
+                          <input type="text" id="input-state" class="form-control form-control-alternative"
+                              placeholder="Country" value="United States" > 
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="form-group">
+                          <label class="form-control-label" for="input-city">City</label>
+                          <input type="text" id="input-state" class="form-control form-control-alternative"
+                              placeholder="Country" value="United States" >
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="form-group">
+                          <label class="form-control-label" for="input-street">Street</label>
+                          <input type="text" id="input-state" class="form-control form-control-alternative"
+                              placeholder="Country" value="United States" >
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="form-group">
+                          <label class="form-control-label" for="input-country">Postal
+                              code</label>
+                          <input type="number" id="input-postal-code"
+                              class="form-control form-control-alternative" value="40000" >
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-4">
+          <!-- Description -->
+          <h6 class="heading-small  mb-4">Profile</h6>
+          <div class="pl-lg-4">
+              <div class="form-group ">
+                  <label class="form-control-label" for="input-street">Profile</label>
+                  <textarea rows="4" class="form-control form-control-alternative"
+                      placeholder="A few words about you ..." >A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+              </div>
+          </div>
+       
+       
+        
+          <!-- <hr class="my-4"> -->
+          <div class="row">
+              <div class="col-6">
+
+              </div>
+              <div class="col-6 text-center">
+                  <div class="row">
+                      <div class="col-4">
+                          
+                      </div>
+
+                      <div class="col-4">
+                          <button class="btn btn-basic btn-block btn-x3">
+                              Submit
+                          </button>
+                      </div>
+                      <div class="col-4">
+                          <div class="btn btn-basic btn-block btn-x2" >
+                              Next Step
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      </form>
+  </div>
+</div>
